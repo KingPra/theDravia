@@ -9,7 +9,6 @@ import Weather from './Weather';
 const Home = () => {
   return (
     <div>
-      <img src={menu} alt="menu" className="menu" />
       <Weather />
       <img src={logo} alt="logo" className="logo"/>
       <Location />
