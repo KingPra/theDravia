@@ -1,6 +1,13 @@
 .temps {
+  display: inline-block;
   color: #9851e0;
   font-weight: 600;
   font-size: 34px;
   margin-left: 13px;
+}
+
+
+.icon {
+margin-top: 25px;
+margin-left: 10px;
 }

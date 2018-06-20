@@ -8,20 +8,27 @@ const API_KEY = 'REMOVED_WEATHER_KEY_DO_NOT_USE__';
 class Weather extends React.Component {
    state = {
      temps: undefined,
-     description: undefined
+     icon: undefined
    }
 
 componentDidMount() {
   this.getWeather();
 }
+
+ weatherIcon = (val) => {
+  console.log(this);
+}
   getWeather = () => {
       axios.get(`http://api.openweathermap.org/data/2.5/weather?q=Charlotte,us&appid=${API_KEY}&units=imperial`)
       .then(response => {
+        const data = response.data;
+        // weather icon display:
+        const iconURL = `http://openweathermap.org/img/w/${data.weather[0].icon}.png`;
         this.setState({
-          temps: Math.round(response.data.main.temp),
-          description: response.data.weather[0].description
+          temps: Math.round(data.main.temp),
+          icon: iconURL
         });
-        console.log(response.data.weather[0].description)
+        console.log(iconURL)
       })
   };
 
@@ -29,6 +36,7 @@ componentDidMount() {
     return (
       <div>
         <p className="temps">{this.state.temps}*F</p>
+        <img src={this.state.icon} alt="weather icons" className="icon"/>
       </div>
     );
   }
