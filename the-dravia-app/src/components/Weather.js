@@ -1,6 +1,8 @@
 import React from 'react';
 import axios from 'axios';
 
+import '../Weather.css';
+
 const API_KEY = 'REMOVED_WEATHER_KEY_DO_NOT_USE__';
 
 class Weather extends React.Component {
@@ -26,7 +28,7 @@ componentDidMount() {
   render() {
     return (
       <div>
-        <p>{this.state.temps}*F</p>
+        <p className="temps">{this.state.temps}*F</p>
       </div>
     );
   }

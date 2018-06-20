@@ -12,7 +12,7 @@ class Location extends React.Component {
   render() {
     return (
       <div>
-        <button>Get current Location</button>
+        <button>Get Current Location</button>
       </div>
     );
   }

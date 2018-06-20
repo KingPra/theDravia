@@ -2,6 +2,6 @@
   text-align: center;
 }
 
-body {
-  background: #c9c3b7;
+.nav {
+  display: none;
 }
