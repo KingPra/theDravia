@@ -1,5 +1,7 @@
 import React from 'react';
 
+import '../Location.css';
+
 class Location extends React.Component {
   state = {
     location: undefined
@@ -12,7 +14,7 @@ class Location extends React.Component {
   render() {
     return (
       <div>
-        <button>Get Current Location</button>
+        <button className="button">Get Current Location</button>
       </div>
     );
   }
