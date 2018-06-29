@@ -1,7 +1,6 @@
 .item-wrapper {
   position: absolute;
   bottom: 0;
-  width: 100%;
   height: 90%;
   background: #9B51E0;
   overflow: scroll;
@@ -33,13 +32,6 @@
   padding-left: 20px;
 }
 
-.item-size {
-  color: #efefef;
-  font-size: 24px;
-  padding-right: 20px;
-  text-align: center;
-}
-
 .item-image {
   position: relative;
   margin-top: 25px;
@@ -59,4 +51,18 @@
 
 .item-frame ul li {
   list-style: none;
+}
+
+@media screen and (max-width:768px) {
+  .item-wrapper {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width:769px) {
+  .item-wrapper {
+    width: 50%;
+    right: 0;
+    overflowX: hidden;
+  }
 }

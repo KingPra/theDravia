@@ -5,6 +5,7 @@ import Location from './Location';
 import logo from '../images/logo.jpg';
 import menu from '../images/menu-24px.svg';
 import Weather from './Weather';
+import Menu from './Menu';
 
 const Home = () => {
   return (
@@ -12,6 +13,9 @@ const Home = () => {
       <Weather />
       <img src={logo} alt="logo" className="logo"/>
       <Location />
+      <section className="menu">
+        <Menu />
+      </section>
     </div>
   );
 }

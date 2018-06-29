@@ -150,8 +150,9 @@ const Menu = () => {
 
       <h2 className="item-group">Cold Brew Coffee</h2>
       <div className="item-frame">
-        <p className="item-description">- Levitate Coffee Roasted</p>
-        <p className="item-size">16oz or 20oz</p>
+        <br />
+        <p className="item-name">- Levitate Coffee Roasted</p>
+        <p className="item-description">- 16oz or 20oz</p>
       </div>
 
       <section>
