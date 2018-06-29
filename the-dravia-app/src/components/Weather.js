@@ -1,7 +1,7 @@
 import React from 'react';
 import axios from 'axios';
 
-import '../Weather.css';
+import '../css/Weather.css';
 
 const API_KEY = 'a53130cd66281fe281431da75fa09d0e';
 
@@ -35,8 +35,8 @@ componentDidMount() {
   render() {
     return (
       <div>
-        <p className="temps">{this.state.temps}*F</p>
-        <img src={this.state.icon} alt="weather icons" className="icon"/>
+        <p className="temps">{this.state.temps}&#176;F</p>
+        <img src={this.state.icon} alt="weather icon" className="icon"/>
       </div>
     );
   }

@@ -1,20 +1,27 @@
 import React from 'react';
 
-import '../Location.css';
+import '../css/Location.css';
+
+
+const AnyReactComponent = ({ text }) => <div>{text}</div>
+  //const API_KEY= 'AIzaSyCW15HLkARKoWKBePgLftUdKKQIyxaQYCM';
 
 class Location extends React.Component {
-  state = {
-    location: undefined
+  state= {
+    location: 'Get Current Location'
   }
 
   getLocation = () => {
-      this.setState({location: 'currently unavailable'})
+      this.setState({location: 'Currently Unavailable'})
+  }
+  handleClick = () => {
+    console.log('this is': this);
   }
 
   render() {
     return (
       <div>
-        <button className="button">Get Current Location</button>
+        <button onClick={this.getLocation} className="button">{this.state.location}</button>
       </div>
     );
   }
