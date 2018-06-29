@@ -4,7 +4,6 @@
   justify-content: center;
   text-align: center;
   position: absolute;
-  left: 50%;
   transform: translate(-50%,-50%);
   background: #9851e0;
   color: white;
@@ -19,4 +18,16 @@
 
 .button:active, .button:focus {
   outline: none;
+}
+
+@media screen and (max-width:768px) {
+ .button {
+   left: 50%;
+ }
+}
+
+@media screen and (min-width:769px) {
+ .button {
+   left: 25%;
+ }
 }

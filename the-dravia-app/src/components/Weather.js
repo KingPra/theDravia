@@ -28,15 +28,17 @@ componentDidMount() {
           temps: Math.round(data.main.temp),
           icon: iconURL
         });
-        console.log(iconURL)
+        console.log(data)
       })
   };
 
   render() {
     return (
       <div>
+        <p className="weather">Currently</p>
         <p className="temps">{this.state.temps}&#176;F</p>
         <img src={this.state.icon} alt="weather icon" className="icon"/>
+        <p className="weather">in CLT</p>
       </div>
     );
   }
