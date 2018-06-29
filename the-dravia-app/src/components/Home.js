@@ -1,6 +1,6 @@
 import React from 'react';
 
-import '../Home.css';
+import '../css/Home.css';
 import Location from './Location';
 import logo from '../images/logo.jpg';
 import menu from '../images/menu-24px.svg';
